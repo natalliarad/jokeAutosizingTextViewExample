@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/emoji"
+        android:layout_width="@dimen/joke_height_min"
+        android:layout_height="@dimen/joke_height_min"
+        android:layout_marginStart="@dimen/padding_small"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/jokeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="😀"/>
+
+    <TextView
+        android:id="@+id/jokeText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/joke_height"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_small"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        app:autoSizePresetSizes="@array/auto_size_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/emoji"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Want to hear a joke about construction? I'm still working on it."/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_small"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jokeText"/>
+</android.support.constraint.ConstraintLayout>

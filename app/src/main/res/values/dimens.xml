@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="joke_height">100dp</dimen>
+    <dimen name="joke_height_min">50dp</dimen>
+    <dimen name="joke_margin">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+</resources>
